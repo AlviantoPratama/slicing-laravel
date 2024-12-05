@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manaje</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         .sidebar {
@@ -43,16 +41,16 @@
             min-height: 150px;
             border: 1px solid #ddd;
             border-radius: 10px;
-            background-color: #f4fcf7; /* Warna hijau muda */
+            background-color: #f4fcf7;
             padding: 10px;
             font-size: 14px;
-            color: #6c757d; /* Warna teks placeholder */
+            color: #6c757d;
             resize: none;
         }
 
         .custom-textarea:focus {
             outline: none;
-            border: 1px solid #0d6efd; /* Warna fokus biru */
+            border: 1px solid #0d6efd;
             background-color: #f9fffa;
         }
         .barcode-container {
@@ -62,27 +60,27 @@
         }
         .table {
             border-collapse: collapse;
-            border: 1px solid #ddd; /* Garis luar tabel */
+            border: 1px solid #ddd;
             width: 100%;
         }
 
         .table th, 
         .table td {
-            border: none; /* Hapus semua garis default */
+            border: none;
             padding: 10px;
             text-align: left;
         }
 
         .table tbody tr {
-            border-bottom: 1px solid #ddd; /* Garis antar baris */
+            border-bottom: 1px solid #ddd;
         }
 
         .table tbody tr:last-child {
-            border-bottom: none; /* Hilangkan garis bawah untuk baris terakhir */
+            border-bottom: none;
         }
 
         .table thead th {
-            border-bottom: 1px solid #ddd; /* Garis bawah untuk header */
+            border-bottom: 1px solid #ddd;
             background-color: #ffffff;
             font-weight: bold;
         }
@@ -91,8 +89,8 @@
             color: white;
             border: none;
             border-radius: 5px;
-            width: 615px; /* Tetapkan panjang tetap untuk tombol */
-            padding: 10px; /* Sesuaikan padding */
+            width: 615px;
+            padding: 10px;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
@@ -107,7 +105,6 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar -->
             <aside class="col-md-2 sidebar bg-light p-3">
                 <h3 class="text-center fw-bold" style="color: green;">Manaje®</h3>
                 <nav class="nav flex-column">
@@ -135,9 +132,7 @@
                     </a>
                 </nav>
             </aside>
-            <!-- Konten Utama -->
             <div class="col-md-10 p-0">
-                <!-- Header -->
                 <header class="header bg-white shadow-sm p-3 mb-4">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
@@ -165,7 +160,6 @@
                         </div>
                     </div>
                 </header>
-                <!-- Main Content -->
                 <main class="container mb-5">
                 <h5 class="mb-4">Tugas</h5>
                 <a href="javascript:history.back();" class="btn btn-light text-green mb-3" style="background-color: white; border: 1px solid #ddd;">
@@ -192,7 +186,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Informasi Pengirim dan Penerima -->
                     <div class="row">
                     <div class="col-md-6">
                     <div class="card mb-3">
@@ -224,7 +217,6 @@
                     </div>
                     </div>
                     </div>
-                    <!-- Layanan dan Pembayaran -->
                     <div class="row">
                     <div class="col-md-6">
                     <div class="card mb-3">
@@ -323,12 +315,9 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JsBarcode JS -->
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
     <script>
-        // Generate Barcode
         JsBarcode("#barcode", "b1772406841", {
             format: "CODE128",
             displayValue: false,

@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manaje</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         .sidebar {
@@ -44,12 +42,10 @@
             width: 250px;
         }
 
-        /* Menyesuaikan header agar tidak lebih lebar dari sidebar */
         .header {
-            width: calc(100% - 0px); /* Mengurangi lebar sidebar */
+            width: calc(100% - 0px);
         }
 
-        /* Mengatur sidebar dan konten utama agar sejajar */
         .row {
             display: flex;
             align-items: flex-start;
@@ -66,7 +62,6 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar -->
             <aside class="col-md-2 sidebar">
                 <h3 class="text-center fw-bold" style="color: green;">Manaje®</h3>
                 <nav class="nav flex-column">
@@ -95,29 +90,22 @@
                 </nav>
             </aside>
 
-            <!-- Konten Utama -->
             <div class="col-md-10 p-0">
-                <!-- Header -->
                 <header class="header bg-white shadow-sm p-3 mb-4">
                     <div class="d-flex justify-content-between align-items-center">
-                        <!-- Kiri: Tautan -->
                         <div>
                             <a href="#" class="text-dark text-decoration-none">Lihat Website</a>
                         </div>
 
-                        <!-- Kanan: Ikon dan Profil -->
                         <div class="d-flex align-items-center">
-                            <!-- Ikon Chat -->
                             <button class="btn btn-light me-2">
                                 <i class="bi bi-chat-left"></i>
                             </button>
 
-                            <!-- Profil -->
                             <button class="btn btn-light me-2">
                                 <i class="bi bi-person"></i>
                             </button>
 
-                            <!-- Dropdown Bahasa -->
                             <div class="dropdown">
                                 <button class="btn btn-success dropdown-toggle me-2" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                     Indonesia
@@ -134,15 +122,12 @@
                     </div>
                 </header>
 
-                <!-- Main Content -->
                 <main class="p-4 mb-5">
                     <h5 class="mb-4">Tugas</h5>
 
-                    <!-- Action Buttons -->
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <!-- Search Box -->
                                 <div class="input-group search-box">
                                     <input type="text" class="form-control" placeholder="Pencarian" aria-label="Search">
                                     <button class="btn btn-outline-secondary" type="button">
@@ -150,7 +135,6 @@
                                     </button>
                                 </div>
 
-                                <!-- Other Buttons -->
                                 <div class="d-flex">
                                     <div class="dropdown me-2">
                                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="rowsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -174,7 +158,6 @@
                                 </div>
                             </div>
 
-                            <!-- Table -->
                             <div class="table-responsive">
                                 <table class="table table-striped">
                                     <thead>
@@ -212,14 +195,11 @@
                     </table>
                 </div>
 
-                <!-- Pagination Info and Controls -->
                 <div class="d-flex justify-content-between align-items-center mt-3">
-                    <!-- Left Pagination Info -->
                     <div class="table-info">
                         Menampilkan 1 hingga 10 dari 100 entri
                     </div>
 
-                    <!-- Pagination Controls -->
                     <nav>
                         <ul class="pagination">
                             <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
@@ -245,7 +225,6 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
